@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "buildCommand": "npm install",
+  "public": true,
+  "functions": {
+    "server.js": {
+      "memory": 1024,
+      "maxDuration": 60
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/server.js"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/server.js"
+    }
+  ],
+  "env": {
+    "MONGODB_URL": "@mongodb-url",
+    "JWT_SECRET": "@jwt-secret",
+    "NODE_ENV": "production",
+    "CORS_ORIGIN": "http://localhost:3000"
+  }
+}

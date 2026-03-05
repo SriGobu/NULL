@@ -1,0 +1,36 @@
+{
+  "buildCommand": "echo 'Blog application ready for deployment'",
+  "outputDirectory": "./",
+  "public": true,
+  "routes": [
+    {
+      "src": "/blog",
+      "dest": "/blog/blogHome.html"
+    },
+    {
+      "src": "/blog/(.*)",
+      "dest": "/blog/blogHome.html"
+    },
+    {
+      "src": "/viewPost",
+      "dest": "/viewPost/viewPost.html"
+    },
+    {
+      "src": "/loginSignup",
+      "dest": "/loginSignup/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/loginSignup/index.html"
+    }
+  ],
+  "env": {
+    "REACT_APP_API_URL": "@api-url"
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "http://localhost:3000/api/$1"
+    }
+  ]
+}

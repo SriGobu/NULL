@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NULL - Blog Platform</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="login-container">
+        <!-- Toggle Button -->
+        <div class="toggle-container">
+            <button class="toggle-btn active" id="loginToggle">Login</button>
+            <button class="toggle-btn" id="signupToggle">Sign Up</button>
+        </div>
+
+        <!-- Login Card -->
+        <div class="login-card active" id="loginCard">
+            <div class="login-header">
+                <h1>Welcome Back</h1>
+                <p>Sign in to your account</p>
+            </div>
+
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="Enter your email" 
+                        required
+                    >
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="password-input-wrapper">
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            placeholder="Enter your password" 
+                            required
+                        >
+                        <button type="button" class="toggle-password" id="togglePassword">
+                            <span class="eye-icon">👁️</span>
+                        </button>
+                    </div>
+                    <span class="error-message" id="passwordError"></span>
+                </div>
+
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" name="remember" id="remember">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="login-button">Sign In</button>
+            </form>
+
+            <div class="login-footer">
+                <p>Don't have an account? <a href="#" class="switch-to-signup">Sign up here</a></p>
+            </div>
+
+            <div class="success-message" id="loginSuccessMessage"></div>
+        </div>
+
+        <!-- Signup Card -->
+        <div class="login-card" id="signupCard">
+            <div class="login-header">
+                <h1>Create Account</h1>
+                <p>Join us to get started</p>
+            </div>
+
+            <form id="signupForm" class="login-form">
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input 
+                        type="text" 
+                        id="signupName" 
+                        name="name" 
+                        placeholder="Enter your full name" 
+                        required
+                    >
+                    <span class="error-message" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="signupEmail">Email Address</label>
+                    <input 
+                        type="email" 
+                        id="signupEmail" 
+                        name="email" 
+                        placeholder="Enter your email" 
+                        required
+                    >
+                    <span class="error-message" id="signupEmailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <div class="password-input-wrapper">
+                        <input 
+                            type="password" 
+                            id="signupPassword" 
+                            name="password" 
+                            placeholder="Create a password" 
+                            required
+                        >
+                        <button type="button" class="toggle-password" id="toggleSignupPassword">
+                            <span class="eye-icon">👁️</span>
+                        </button>
+                    </div>
+                    <span class="error-message" id="signupPasswordError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <div class="password-input-wrapper">
+                        <input 
+                            type="password" 
+                            id="confirmPassword" 
+                            name="confirmPassword" 
+                            placeholder="Confirm your password" 
+                            required
+                        >
+                        <button type="button" class="toggle-password" id="toggleConfirmPassword">
+                            <span class="eye-icon">👁️</span>
+                        </button>
+                    </div>
+                    <span class="error-message" id="confirmPasswordError"></span>
+                </div>
+
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" name="terms" id="terms" required>
+                        <span>I agree to the terms and conditions</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="login-button">Create Account</button>
+            </form>
+
+            <div class="login-footer">
+                <p>Already have an account? <a href="#" class="switch-to-login">Sign in here</a></p>
+            </div>
+
+            <div class="success-message" id="signupSuccessMessage"></div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NULL - Your Blog</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="blogHome.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>📝 BlogHub</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">About</a></li>
+                <li><span class="user-info" id="userInfo"></span></li>
+                <li><button class="logout-btn" id="logoutBtn">Logout</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Sidebar with User Profile -->
+        <aside class="sidebar">
+            <div class="user-profile-card">
+                <div class="profile-avatar" id="profileAvatar">A</div>
+                <h2 id="userName">User Name</h2>
+                <p id="userEmail">user@example.com</p>
+                <p class="member-since" id="memberSince">Member since Feb 2026</p>
+                <hr>
+                <div class="user-stats">
+                    <div class="stat">
+                        <p class="stat-number" id="postCount">0</p>
+                        <p class="stat-label">Posts</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="create-post-btn" id="createPostBtn">✍️ Create New Post</button>
+        </aside>
+
+        <!-- Blog Content -->
+        <div class="blog-content">
+            <div class="header-section">
+                <h1>Welcome to Your Blog</h1>
+                <p class="subtitle" id="blogSubtitle">Share your thoughts and ideas with the world</p>
+            </div>
+
+            <!-- Posts Display -->
+            <div class="posts-container" id="postsContainer">
+                <div class="no-posts-message">
+                    <p>No posts yet. Create your first post to get started! 🚀</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Create/Edit Post Modal -->
+    <div class="modal" id="postModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2 id="modalTitle">Create New Post</h2>
+            
+            <form id="postForm">
+                <div class="form-group">
+                    <label for="postTitle">Post Title</label>
+                    <input 
+                        type="text" 
+                        id="postTitle" 
+                        placeholder="Enter your post title" 
+                        required
+                        maxlength="100"
+                    >
+                    <span class="error-message" id="titleError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="postContent">Content</label>
+                    <textarea 
+                        id="postContent" 
+                        placeholder="Write your amazing content here..." 
+                        required
+                        rows="8"
+                    ></textarea>
+                    <span class="error-message" id="contentError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="postCategory">Category</label>
+                    <select id="postCategory">
+                        <option value="Technology">Technology</option>
+                        <option value="Travel">Travel</option>
+                        <option value="Food">Food</option>
+                        <option value="Lifestyle">Lifestyle</option>
+                        <option value="Business">Business</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Publish Post</button>
+                    <button type="button" class="btn btn-secondary" id="cancelBtn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="blogHome.js"></script>
+</body>
+</html>
