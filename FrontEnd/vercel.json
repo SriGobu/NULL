@@ -24,9 +24,6 @@
       "dest": "/loginSignup/index.html"
     }
   ],
-  "env": {
-    "REACT_APP_API_URL": "@api-url"
-  },
   "rewrites": [
     {
       "source": "/api/(.*)",
