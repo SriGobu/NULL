@@ -2,36 +2,7 @@
   "buildCommand": "echo 'Blog application ready for deployment'",
   "outputDirectory": "./",
   "public": true,
-  "cleanUrls": true,
-  "headers": [
-    {
-      "source": "/loginSignup/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/blog/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/viewPost/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    }
-  ],
+  "cleanUrls": false,
   "rewrites": [
     {
       "source": "/api/(.*)",
@@ -47,10 +18,6 @@
     },
     {
       "source": "/loginSignup",
-      "destination": "/loginSignup/index.html"
-    },
-    {
-      "source": "/((?!.*\\.).*)",
       "destination": "/loginSignup/index.html"
     }
   ]
