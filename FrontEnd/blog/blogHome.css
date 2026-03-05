@@ -9,7 +9,7 @@ body {
     background: linear-gradient(135deg, #000000 0%, #0a0805 100%);
     min-height: 100vh;
     color: #e8e8e8;
-    box-shadow: inset 0 0 80px rgba(212, 175, 55, 0.08);
+    box-shadow: inset 0 0 80px rgba(255, 255, 255, 0.08);
 }
 
 /* Navigation Bar */
@@ -17,11 +17,11 @@ body {
     background: linear-gradient(135deg, rgba(26, 20, 16, 0.98) 0%, rgba(15, 13, 10, 0.95) 100%);
     color: #e8e8e8;
     padding: 1rem 0;
-    box-shadow: 0 0 30px rgba(212, 175, 55, 0.15), 0 2px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.15), 0 2px 10px rgba(0, 0, 0, 0.5);
     position: sticky;
     top: 0;
     z-index: 100;
-    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
 }
 
@@ -37,8 +37,8 @@ body {
 .logo h1 {
     font-size: 24px;
     font-weight: 700;
-    color: #d4af37;
-    text-shadow: 0 0 20px rgba(212, 175, 55, 0.6), 0 0 40px rgba(212, 175, 55, 0.3);
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.3);
 }
 
 .nav-menu {
@@ -49,7 +49,7 @@ body {
 }
 
 .nav-link {
-    color: #9e8c6f;
+    color: #888888;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
@@ -57,29 +57,29 @@ body {
 }
 
 .nav-link:hover {
-    color: #d4af37;
+    color: #ffffff;
 }
 
 .user-info {
-    color: #6b5d4d;
+    color: #888888;
     font-size: 14px;
 }
 
 .logout-btn {
-    background: linear-gradient(135deg, #d4af37 0%, #ffed4e 100%);
-    border: 1px solid #d4af37;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+    border: 1px solid #ffffff;
     color: #ffffff;
     padding: 8px 16px;
     border-radius: 6px;
     cursor: pointer;
     font-weight: 500;
     transition: all 0.3s ease;
-    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
 }
 
 .logout-btn:hover {
-    background: linear-gradient(135deg, #ffed4e 0%, #ffd700 100%);
-    box-shadow: 0 0 30px rgba(212, 175, 55, 0.8);\n    color: #ffffff;
+    background: linear-gradient(135deg, #f0f0f0 0%, #ffffff 100%);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);\n    color: #ffffff;
 }
 
 /* Main Container */
@@ -103,10 +103,10 @@ body {
     background: linear-gradient(135deg, rgba(26, 20, 16, 0.95) 0%, rgba(15, 13, 10, 0.98) 100%);
     border-radius: 10px;
     padding: 30px;
-    box-shadow: 0 0 25px rgba(212, 175, 55, 0.15), 0 2px 10px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(212, 175, 55, 0.2);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.15), 0 2px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
-    border: 1px solid rgba(212, 175, 55, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
     text-align: center;
     animation: slideIn 0.5s ease-out;
@@ -138,19 +138,19 @@ body {
 .user-profile-card h2 {
     font-size: 20px;
     margin-bottom: 8px;
-    color: #d4af37;
-    text-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
 }
 
 .user-profile-card p {
-    color: #9e8c6f;
+    color: #888888;
     font-size: 14px;
     margin-bottom: 5px;
 }
 
 .member-since {
     font-size: 12px;
-    color: #6b5d4d;
+    color: #888888;
     margin: 15px 0;
 }
 
@@ -167,24 +167,24 @@ body {
 .stat-number {
     font-size: 24px;
     font-weight: 700;
-    color: #d4af37;
-    text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .stat-label {
     font-size: 12px;
-    color: #6b5d4d;
+    color: #888888;
     margin-top: 5px;
 }
 
 hr {
     border: none;
-    border-top: 1px solid #2d2115;
+    border-top: 1px solid #333333;
     margin: 20px 0;
 }
 
 .create-post-btn {
-    background: #d4af37;
+    background: #ffffff;
     color: #ffffff;
     border: none;
     padding: 14px;
@@ -196,7 +196,7 @@ hr {
 }
 
 .create-post-btn:hover {
-    background: #ffd700;
+    background: #ffffff;
     box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
     transform: translateY(-2px);
 }
@@ -208,9 +208,9 @@ hr {
 
 .header-section {0px;
     padding: 40px;
-    box-shadow: 0 0 25px rgba(212, 175, 55, 0.15), 0 2px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.15), 0 2px 10px rgba(0, 0, 0, 0.5);
     margin-bottom: 30px;
-    border: 1px solid rgba(212, 175, 55, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .header-section h1 {
@@ -221,7 +221,7 @@ hr {
 
 .subtitle {
     font-size: 18px;
-    color: #9e8c6f;
+    color: #888888;
 }
 
 /* Posts Container */
@@ -237,13 +237,13 @@ hr {
     padding: 60px 40px;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0 0 25px rgba(212, 175, 55, 0.15), 0 2px 10px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(212, 175, 55, 0.2);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.15), 0 2px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .no-posts-message p {
     font-size: 18px;
-    color: #9e8c6f;
+    color: #888888;
 }
 
 /* Post Card */
@@ -251,11 +251,11 @@ hr {
     background: linear-gradient(135deg, rgba(26, 20, 16, 0.95) 0%, rgba(15, 13, 10, 0.98) 100%);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 0 25px rgba(212, 175, 55, 0.15), 0 2px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.15), 0 2px 10px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease;
     cursor: pointer;
     animation: fadeIn 0.5s ease-out;
-    border: 1px solid rgba(212, 175, 55, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 @keyframes fadeIn {
@@ -271,22 +271,22 @@ hr {
 
 .post-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 0 30px rgba(212, 175, 55, 0.4), 0 8px 20px rgba(0, 0, 0, 0.6);
-    border-color: #d4af37;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.4), 0 8px 20px rgba(0, 0, 0, 0.6);
+    border-color: #ffffff;
 }
 
 .post-header {
     padding: 20px;
-    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .post-title {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 10px;
-    color: #d4af37;
+    color: #ffffff;
     word-break: break-word;
-    text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 .post-meta {
@@ -298,7 +298,7 @@ hr {
 
 .category-badge {
     display: inline-block;
-    background: #d4af37;
+    background: #ffffff;
     color: #ffffff;
     padding: 4px 12px;
     border-radius: 20px;
@@ -311,7 +311,7 @@ hr {
 
 .post-date {
     font-size: 12px;
-    color: #6b5d4d;
+    color: #888888;
 }
 
 .post-preview {
@@ -320,7 +320,7 @@ hr {
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 1.6;
-    color: #9e8c6f;
+    color: #888888;
     font-size: 14px;
 }
 
@@ -391,7 +391,7 @@ hr {
     overflow-y: auto;
     position: relative;
     animation: slideUp 0.4s ease;
-    border: 1px solid rgba(212, 175, 55, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
 
@@ -421,7 +421,7 @@ hr {
 }
 
 .close:hover {
-    color: #d4af37;
+    color: #ffffff;
 }
 
 .modal-content h2 {
@@ -446,7 +446,7 @@ hr {
 .form-group textarea,
 .form-group select {
     padding: 12px;
-    border: 1.5px solid #2d2115;
+    border: 1.5px solid #333333;
     border-radius: 8px;
     font-size: 14px;
     font-family: inherit;
@@ -459,7 +459,7 @@ hr {
 .form-group textarea:focus,
 .form-group select:focus {
     outline: none;
-    border-color: #d4af37;
+    border-color: #ffffff;
     box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
 }
 
@@ -498,13 +498,13 @@ hr {
 .post-detail .post-meta {
     margin-bottom: 30px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #2d2115;
+    border-bottom: 1px solid #333333;
 }
 
 .post-body {
     line-height: 1.8;
     font-size: 16px;
-    color: #9e8c6f;
+    color: #888888;
     margin-bottom: 30px;
     white-space: pre-wrap;
     word-wrap: break-word;
@@ -515,7 +515,7 @@ hr {
     gap: 12px;
     margin-top: 30px;
     padding-top: 20px;
-    border-top: 1px solid #2d2115;
+    border-top: 1px solid #333333;
 }
 
 .post-actions button {
