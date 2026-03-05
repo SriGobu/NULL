@@ -3,16 +3,6 @@
   "outputDirectory": "./",
   "public": true,
   "cleanUrls": false,
-  "headers": [
-    {
-      "source": "/(.*)\\.css",
-      "headers": [{ "key": "Content-Type", "value": "text/css" }]
-    },
-    {
-      "source": "/(.*)\\.js",
-      "headers": [{ "key": "Content-Type", "value": "application/javascript" }]
-    }
-  ],
   "rewrites": [
     {
       "source": "/api/(.*)",
@@ -28,6 +18,10 @@
     },
     {
       "source": "/loginSignup",
+      "destination": "/loginSignup/index.html"
+    },
+    {
+      "source": "/",
       "destination": "/loginSignup/index.html"
     }
   ]
