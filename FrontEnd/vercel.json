@@ -2,44 +2,47 @@
   "buildCommand": "echo 'Blog application ready for deployment'",
   "outputDirectory": "./",
   "public": true,
-  "routes": [
+  "cleanUrls": true,
+  "headers": [
     {
-      "src": "/favicon.ico",
-      "dest": "/favicon.ico"
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
     },
     {
-      "src": "/favicon.png",
-      "dest": "/favicon.png"
-    },
-    {
-      "src": "/(.*\\.(css|js|ico|png|jpg|jpeg|gif|svg|woff|woff2|ttf))$",
-      "dest": "/$1"
-    },
-    {
-      "src": "/blog",
-      "dest": "/blog/blogHome.html"
-    },
-    {
-      "src": "/blog/(.*)",
-      "dest": "/blog/blogHome.html"
-    },
-    {
-      "src": "/viewPost",
-      "dest": "/viewPost/viewPost.html"
-    },
-    {
-      "src": "/loginSignup",
-      "dest": "/loginSignup/index.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/loginSignup/index.html"
+      "source": "/**/*.@(css|js|woff|woff2|ttf|otf|eot|svg|ico|png|jpg|jpeg|gif)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
     }
   ],
   "rewrites": [
     {
       "source": "/api/(.*)",
       "destination": "https://api.null-blog.vercel.app/api/$1"
+    },
+    {
+      "source": "/blog",
+      "destination": "/blog/blogHome.html"
+    },
+    {
+      "source": "/viewPost",
+      "destination": "/viewPost/viewPost.html"
+    },
+    {
+      "source": "/loginSignup",
+      "destination": "/loginSignup/index.html"
+    },
+    {
+      "source": "/((?!.*\\.).*)",
+      "destination": "/loginSignup/index.html"
     }
   ]
 }
