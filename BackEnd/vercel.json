@@ -22,6 +22,6 @@
     "MONGODB_URL": "@mongodb-url",
     "JWT_SECRET": "@jwt-secret",
     "NODE_ENV": "production",
-    "CORS_ORIGIN": "http://localhost:3000"
+    "CORS_ORIGIN": "https://www.null.sg247.dev"
   }
 }

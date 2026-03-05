@@ -1,5 +1,5 @@
 // API base URL
-const API_URL = 'http://localhost:3000/api';
+const API_URL = 'https://null-xsgo.onrender.com/api';
 
 const loginForm = document.getElementById('loginForm');
 const signupForm = document.getElementById('signupForm');
