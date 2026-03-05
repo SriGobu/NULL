@@ -4,6 +4,18 @@
   "public": true,
   "routes": [
     {
+      "src": "/favicon.ico",
+      "dest": "/favicon.ico"
+    },
+    {
+      "src": "/favicon.png",
+      "dest": "/favicon.png"
+    },
+    {
+      "src": "/(.*\\.(css|js|ico|png|jpg|jpeg|gif|svg|woff|woff2|ttf))$",
+      "dest": "/$1"
+    },
+    {
       "src": "/blog",
       "dest": "/blog/blogHome.html"
     },
